@@ -1,0 +1,62 @@
+10/17 09:54:16 AM | Start Loading saved feather dataset
+10/17 09:54:18 AM | Data loaded.
+10/17 09:54:18 AM | Define the pipeline:
+10/17 09:54:18 AM | Training, testing split.
+10/17 09:54:18 AM | Searching for best params...
+10/17 10:33:31 AM | Best parameters set found on development set:
+10/17 10:33:31 AM | {'clf__C': 0.5, 'tfidf__ngram_range': (1, 2)}
+10/17 10:33:31 AM | Grid scores on development set:
+10/17 10:33:31 AM | 0.520 (+/-0.003) for {'clf__C': 0.1, 'tfidf__ngram_range': (1, 2)}
+10/17 10:33:31 AM | 0.520 (+/-0.004) for {'clf__C': 0.1, 'tfidf__ngram_range': (1, 3)}
+10/17 10:33:31 AM | 0.538 (+/-0.003) for {'clf__C': 0.2, 'tfidf__ngram_range': (1, 2)}
+10/17 10:33:31 AM | 0.538 (+/-0.003) for {'clf__C': 0.2, 'tfidf__ngram_range': (1, 3)}
+10/17 10:33:31 AM | 0.545 (+/-0.003) for {'clf__C': 0.3, 'tfidf__ngram_range': (1, 2)}
+10/17 10:33:31 AM | 0.545 (+/-0.003) for {'clf__C': 0.3, 'tfidf__ngram_range': (1, 3)}
+10/17 10:33:31 AM | 0.549 (+/-0.002) for {'clf__C': 0.5, 'tfidf__ngram_range': (1, 2)}
+10/17 10:33:31 AM | 0.549 (+/-0.002) for {'clf__C': 0.5, 'tfidf__ngram_range': (1, 3)}
+10/17 10:33:31 AM | 0.546 (+/-0.003) for {'clf__C': 1, 'tfidf__ngram_range': (1, 2)}
+10/17 10:33:31 AM | 0.546 (+/-0.004) for {'clf__C': 1, 'tfidf__ngram_range': (1, 3)}
+10/17 10:33:31 AM | 0.521 (+/-0.006) for {'clf__C': 5, 'tfidf__ngram_range': (1, 2)}
+10/17 10:33:31 AM | 0.522 (+/-0.005) for {'clf__C': 5, 'tfidf__ngram_range': (1, 3)}
+10/17 10:33:31 AM | Scores report on test dataset using best model:
+10/17 10:33:34 AM |                 precision    recall  f1-score   support
+
+ARTS & CULTURE       0.63      0.52      0.57       410
+  BLACK VOICES       0.59      0.47      0.52       451
+      BUSINESS       0.54      0.48      0.51       557
+        COMEDY       0.62      0.43      0.51       523
+         CRIME       0.60      0.63      0.62       327
+       DIVORCE       0.81      0.75      0.78       350
+     EDUCATION       0.56      0.46      0.50       208
+ ENTERTAINMENT       0.67      0.76      0.71      1602
+   ENVIRONMENT       0.61      0.26      0.37       138
+         FIFTY       0.42      0.12      0.19       146
+  FOOD & DRINK       0.73      0.82      0.77       838
+     GOOD NEWS       0.44      0.18      0.26       131
+         GREEN       0.49      0.40      0.44       274
+HEALTHY LIVING       0.46      0.21      0.29       679
+ HOME & LIVING       0.76      0.76      0.76       415
+        IMPACT       0.43      0.27      0.33       323
+ LATINO VOICES       0.66      0.30      0.41        97
+         MEDIA       0.57      0.44      0.50       262
+         MONEY       0.61      0.43      0.51       188
+       PARENTS       0.65      0.79      0.71      1234
+      POLITICS       0.73      0.85      0.79      3255
+  QUEER VOICES       0.78      0.72      0.75       656
+      RELIGION       0.59      0.47      0.52       252
+       SCIENCE       0.60      0.46      0.52       219
+        SPORTS       0.71      0.76      0.74       511
+STYLE & BEAUTY       0.82      0.85      0.83      1212
+          TECH       0.61      0.49      0.54       217
+        TRAVEL       0.72      0.80      0.76      1018
+      WEDDINGS       0.82      0.81      0.81       389
+    WEIRD NEWS       0.49      0.28      0.35       268
+      WELLNESS       0.59      0.80      0.68      1748
+         WOMEN       0.47      0.32      0.38       340
+    WORLD NEWS       0.56      0.26      0.35       218
+     WORLDPOST       0.63      0.61      0.62       630
+
+      accuracy                           0.67     20086
+     macro avg       0.62      0.53      0.56     20086
+  weighted avg       0.66      0.67      0.65     20086
+

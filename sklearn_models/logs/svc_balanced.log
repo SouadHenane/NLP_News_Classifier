@@ -1,0 +1,81 @@
+10/17 09:50:15 AM | Start Loading saved feather dataset
+10/17 09:50:16 AM | Data loaded.
+10/17 09:50:16 AM | Define the pipeline:
+10/17 09:50:16 AM | Pipeline(memory=None,
+         steps=[('tfidf',
+                 TfidfVectorizer(analyzer='word', binary=False,
+                                 decode_error='strict',
+                                 dtype=<class 'numpy.float64'>,
+                                 encoding='utf-8', input='content',
+                                 lowercase=True, max_df=0.9, max_features=None,
+                                 min_df=3, ngram_range=(1, 2), norm='l2',
+                                 preprocessor=None, smooth_idf=True,
+                                 stop_words=None, strip_accents=None,
+                                 sublinear_tf=True,
+                                 token_pattern='(?u)\\b\\w\\w+\\b',
+                                 tokenizer=None, use_idf=True,
+                                 vocabulary=None)),
+                ('clf',
+                 CalibratedClassifierCV(base_estimator=LinearSVC(C=0.2,
+                                                                 class_weight=None,
+                                                                 dual=True,
+                                                                 fit_intercept=True,
+                                                                 intercept_scaling=1,
+                                                                 loss='squared_hinge',
+                                                                 max_iter=1000,
+                                                                 multi_class='ovr',
+                                                                 penalty='l2',
+                                                                 random_state=None,
+                                                                 tol=0.0001,
+                                                                 verbose=0),
+                                        cv='warn', method='sigmoid'))],
+         verbose=False)
+10/17 09:50:16 AM | Training, testing split.
+10/17 09:50:16 AM | Training the classifier...
+10/17 09:50:34 AM | Training is done. F1-score:
+10/17 09:50:34 AM | 0.5444388767912927
+10/17 09:50:34 AM | Scores report on test dataset:
+10/17 09:50:34 AM |                 precision    recall  f1-score   support
+
+ARTS & CULTURE       0.52      0.55      0.53        87
+  BLACK VOICES       0.57      0.46      0.51        93
+      BUSINESS       0.38      0.35      0.36        98
+        COMEDY       0.64      0.41      0.50        99
+         CRIME       0.48      0.54      0.51        91
+       DIVORCE       0.87      0.67      0.76       100
+     EDUCATION       0.63      0.63      0.63       105
+ ENTERTAINMENT       0.54      0.62      0.58       112
+   ENVIRONMENT       0.45      0.42      0.43        93
+         FIFTY       0.25      0.31      0.28        85
+  FOOD & DRINK       0.53      0.75      0.62        89
+     GOOD NEWS       0.42      0.34      0.38       100
+         GREEN       0.47      0.48      0.47       100
+HEALTHY LIVING       0.32      0.30      0.31       109
+ HOME & LIVING       0.63      0.82      0.71        98
+        IMPACT       0.33      0.31      0.32        94
+ LATINO VOICES       0.77      0.65      0.70        95
+         MEDIA       0.59      0.62      0.60        99
+         MONEY       0.55      0.58      0.56        99
+       PARENTS       0.51      0.56      0.53       108
+      POLITICS       0.45      0.56      0.50       101
+  QUEER VOICES       0.81      0.72      0.76        98
+      RELIGION       0.74      0.62      0.67       104
+       SCIENCE       0.59      0.59      0.59        93
+        SPORTS       0.63      0.74      0.68        90
+STYLE & BEAUTY       0.77      0.76      0.76        99
+          TECH       0.69      0.60      0.64       138
+        TRAVEL       0.59      0.59      0.59       115
+      WEDDINGS       0.85      0.82      0.84       108
+    WEIRD NEWS       0.40      0.40      0.40       111
+      WELLNESS       0.34      0.40      0.37       110
+         WOMEN       0.51      0.49      0.50       108
+    WORLD NEWS       0.49      0.39      0.43       101
+     WORLDPOST       0.46      0.50      0.48        84
+
+      accuracy                           0.55      3414
+     macro avg       0.55      0.55      0.54      3414
+  weighted avg       0.55      0.55      0.55      3414
+
+10/17 09:50:34 AM | Top 3 accuracy on test dataset:
+10/17 09:50:34 AM | 0.7776801405975395
+10/17 09:50:34 AM | Saving model
