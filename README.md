@@ -8,7 +8,7 @@ Train and deploy a news classifier based on ULMFit.
 </a>
 <h1> Table of Contents </h1>
 
-    Introduction
+  <h6>  Introduction </h6>
     Data Preparation
         Data collection
         Data Exploration and cleaning
