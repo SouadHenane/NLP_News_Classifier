@@ -6,7 +6,7 @@ Train and deploy a news classifier based on ULMFit.
 <a href="https://nlp.imadelhanafi.com">
 <img src="https://imadelhanafi.com/data/draft/nlp.png" width="500" height="400" class="center"/>
 </a>
- Table of Contents
+<h1> Table of Contents </h1>
 
     Introduction
     Data Preparation
