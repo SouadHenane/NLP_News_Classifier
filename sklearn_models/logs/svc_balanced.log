@@ -76,6 +76,3 @@ STYLE & BEAUTY       0.77      0.76      0.76        99
      macro avg       0.55      0.55      0.54      3414
   weighted avg       0.55      0.55      0.55      3414
 
-10/17 09:50:34 AM | Top 3 accuracy on test dataset:
-10/17 09:50:34 AM | 0.7776801405975395
-10/17 09:50:34 AM | Saving model
